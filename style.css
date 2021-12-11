@@ -18,6 +18,10 @@
   --white: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul,
 ol,
 li {
@@ -36,7 +40,13 @@ h6 {
 
 html,
 body {
+  height: 100%;
   font-family: "Tahoma", sans-serif;
+  line-height: 24px;
+}
+
+img {
+  vertical-align: top;
 }
 
 button {
@@ -45,4 +55,62 @@ button {
 
 button:hover {
   opacity: 0.8;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content {
+  width: 1230px;
+  margin: 0 auto;
+}
+
+/* <----- HEADER -----> */
+
+.header {}
+
+/* <----- MAIN -----> */
+
+.main {
+  flex: 1 1 auto;
+}
+
+/* <----- FOOTER -----> */
+
+.footer {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  background-color: var(--body-bg);
+  color: var(--secondary-text);
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_copyright {}
+
+.socials_icon {
+  width: 36px;
+  height: 36px;
+  color: var(--secondary-text);
+}
+
+.socials_icon:not(:last-child) {
+  margin-right: 24px;
+}
+
+.socials_icon:hover {
+  color: var(--topaz);
 }

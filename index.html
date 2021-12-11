@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="icons_style.css">
   <title>Webinar Template</title>
 </head>
+
 <body>
-  <h1>Hello world!</h1>
+  <div class="wrapper">
+
+    <div class="container">
+
+      <header class="header">
+        <div class="content">
+
+          <div class="header_info">
+            <div class="info_logo">
+              <img src="images/veeam_logo.svg" alt="logo">
+            </div>
+            <div class="info_text">
+              <div class="text_flag">
+                <p>flag</p>
+              </div>
+              <div class="text_title">
+                <h1>H1 title with only one or two lines</h1>
+              </div>
+              <div class="text_data">
+                <p>Wednesday, Apr. 09</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="header_registration">
+            <div class="registration_form">
+              <form class="header-form">
+                <div class="header-form_header">
+                  <p>Register to attend</p>
+                </div>
+                <input type="text" id="header-form_name" placeholder="First name*">
+                <input type="text" id="header-form_surname" placeholder="Last name*">
+                <input type="email" id="header-form_email" placeholder="Business email*">
+                <input type="checkbox" id="header-form_checkbox">
+                <label for="header-form_checkbox">
+                  <p>Yes, I want to receive communications about Veeam products, services and events. I can unsubscribe at any time.</p>
+                </label>
+                <div class="header-form_agreement">
+                  <p>By registering you agree to the <a href="#" class="agreement_href">Veeam Privacy Policy</a>.</p>
+                </div>
+                <input type="submit" class="header-form_btn" value="register now">
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="program"></div>
+        <div class="profiles"></div>
+      </main>
+
+      <footer class="footer">
+        <div class="content">
+          <div class="footer_block">
+            <div class="footer_copyright">
+              <p>©2021 Veeam® Software | Privacy Policy & Cookies | EULA | Licensing Policy</p>
+            </div>
+            <div class="footer_socials">
+              <a href="#" class="socials_icon icon-twitter_icon"></a>
+              <a href="#" class="socials_icon icon-facebook_icon"></a>
+              <a href="#" class="socials_icon icon-linkedin_icon"></a>
+              <a href="#" class="socials_icon icon-spiceworks_icon"></a>
+              <a href="#" class="socials_icon icon-youtube_icon"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+  </div>
 </body>
+
 </html>
